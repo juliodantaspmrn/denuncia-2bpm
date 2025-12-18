@@ -68,24 +68,31 @@ button {
 
 <h2>FAÇA SUA DENÚNCIA</h2>
 
-<form method="POST" data-netlify="true" enctype="multipart/form-data">
+<form 
+  name="denuncia-anonima"
+  method="POST"
+  data-netlify="true"
+  enctype="multipart/form-data"
+>
+
   <input type="hidden" name="form-name" value="denuncia-anonima">
 
   <label>Data da Denúncia</label>
-  <input type="date">
+  <input type="date" name="data">
 
   <label>Informações</label>
-  <textarea placeholder="Descreva os fatos..."></textarea>
+  <textarea name="informacoes" placeholder="Descreva os fatos..."></textarea>
 
   <label>Anexos</label>
-  <input type="file" multiple>
+  <input type="file" name="anexos" multiple>
 
   <div class="buttons">
     <button type="reset">Limpar</button>
     <button type="submit" class="submit">Enviar</button>
-  </div>
+ </div>
 
 </form>
+
 
 </div>
 
