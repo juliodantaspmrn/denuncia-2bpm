@@ -68,7 +68,8 @@ button {
 
 <h2>FAÇA SUA DENÚNCIA</h2>
 
-<form method="POST">
+<form method="POST" data-netlify="true" enctype="multipart/form-data">
+  <input type="hidden" name="form-name" value="denuncia-anonima">
 
   <label>Data da Denúncia</label>
   <input type="date">
